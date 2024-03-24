@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio SOLON Dylan</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="" class="nav__logo"> Dylan <span>Solon</span></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </header>
+    <!--==================== MAIN ====================-->
+    <main class="main text__shadow">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <div class="home__data">
+              <h3 class="home__subtitle">Hello <span>I'm</span></h3>
+              <h1 class="home__title">Dylan Solon</h1>
+              <h3 class="home__education">Full Stack Developper</h3>
+              <p class="home__description">
+                I'm currently in my first year of a Bachelor's degree in
+                Application Design and Development (RNCP6 level Bac+3) at CODA -
+                Computer Science School.
+              </p>
+              <div
+                class="buttonDownload"
+                id="downloadButton"
+                onclick="downloadCV()"
+              >
+                <div class="content">
+                  <i class="bx bx-cloud-download"></i>
+                  <span class="button-text">Download CV</span>
+                </div>
+              </div>
+            </div>
+            <div class="home__social">
+              <a href="https://github.com/dylansolon" target="_blank" class="home__social-link">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a href="www.linkedin.com/in/dylansolon" target="_blank" class="home__social-link">
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home__image">
+            <svg
+              class="home__blob"
+              viewBox="0 0 550 591"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask id="maskBlob" mask-type="alpha">
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                       170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                       447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                       587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                       438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
+                />
+              </mask>
+              <g mask="url(#maskBlob)">
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                       170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                       447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                       587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                       438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
+                />
+
+                <rect x="37" width="476" height="630" fill="url(#pattern0)" />
+              </g>
+
+              <rect x="37" width="476" height="300" fill="url(#pattern1)" />
+
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
+                  />
+                </pattern>
+
+                <pattern
+                  id="pattern1"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
+                  />
+                </pattern>
+                <!-- Insert your profile (recommended size: 640 x 940) -->
+                <image
+                  class="home_img"
+                  id="imageBlob"
+                  width="640"
+                  height="940"
+                  href="dylan9.png"
+                />
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title">About <span>Me</span></h2>
+            <p class="about__description">
+              I'm looking for a apprenticeship for the next two years of my
+              Bachelor's program.<br />
+              I'm available from June 2024.
+            </p>
+            <a href="#contact" class="button">Contact me </a>
+          </div>
+
+          <div class="about__image">
+            <img src="about2.png" alt="" class="about-img" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section">
+        <div class="skills__container container grid">
+          <div class="skills__data">
+            <h2 class="section__title">My <span>Skills</span></h2>
+            <p class="skills__description">
+              See fully what skills i have and perform, to<br />
+              develop the projects for you.
+            </p>
+            <a href="#projects" class="button">See Projects </a>
+          </div>
+          <div class="skills__content">
+            <ol class="skills__group">
+              <li class="skills__item">HTML & CSS</li>
+              <li class="skills__item">Javascript</li>
+              <li class="skills__item">Reactjs</li>
+              <li class="skills__item">PHP</li>
+            </ol>
+            <ol class="skills__group" start="5">
+              <li class="skills__item">Nodejs</li>
+              <li class="skills__item">Figma</li>
+              <li class="skills__item">Git & GitHub</li>
+              <li class="skills__item">Wordpress</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__subtitle">My <span>Services</span></h2>
+        <div class="services__container container grid">
+          <article class="services__card">
+            <i class="ri-layout-3-line services__icon"> </i>
+            <h2 class="services__title">Web Developper</h2>
+            <p class="services__description">
+              Development of custom web pages.<br />This website use only
+              HTML/CSS and Javascript.
+            </p>
+          </article>
+          <article class="services__card">
+            <i class="ri-pantone-line services__icon"></i>
+            <h2 class="services__title">UI/UX Designer</h2>
+            <p class="services__description">
+              I offer design of web interfaces and mobile applications, design
+              made in figma.
+            </p>
+          </article>
+          <article class="services__card">
+            <i class="ri-wordpress-fill services__icon"></i>
+            <h2 class="services__title">No Code</h2>
+            <p class="services__description">
+              Crafting Tailor-Made No Code Solutions, Accessible to All Budgets.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__subtitle">My <span>Projects</span></h2>
+        <div class="projects__container container grid">
+          <article class="projects__card">
+            <img src="burger.PNG" alt="" />
+
+            <div class="projects__modal">
+              <span class="projects_subtitle">Full Stack Project</span>
+              <h2 class="projects__title">E-commerce Website</h2>
+              <h4 class="projects__title">JS/PHP/MySQL</h4>
+
+              <a href="" class="projects__button">
+                View demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="kappa2.PNG" alt="" />
+
+            <div class="projects__modal">
+              <span class="projects_subtitle">Game jam</span>
+              <h2 class="projects__title">Kappa Destroyer</h2>
+              <h4 class="projects__title">JS</h4>
+              <a href="" class="projects__button">
+                View demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </article>
+          <article class="projects__card">
+            <img src="coverGithub.png" alt="" />
+
+            <div class="projects__modal">
+              <span class="projects_subtitle">Github</span>
+              <h2 class="projects__title">See my side Projects</h2>
+              <a href="" class="projects__button">
+                View demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact <span>me</span></h2>
+        <div class="contact__container container grid">
+          <form action="" class="contact__form" id="contact-form">
+            <div class="contact__group">
+              <input
+                type="text"
+                name="user_name"
+                required
+                placeholder="Enter your name"
+                class="contact__input"
+              />
+              <input
+                type="email"
+                name="user_email"
+                required
+                placeholder="Enter your email"
+                class="contact__input"
+              />
+            </div>
+            <textarea
+              name="user_project"
+              required
+              placeholder="Enter your Message"
+              class="contact__input"
+            ></textarea>
+            <p class="contact__message" id="contact-message"></p>
+            <button type="submit" class="button contact__button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer text__shadow">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Dylan <span>Solon</span></h1>
+          <h2 class="footer__education">Full Stack Developer</h2>
+        </div>
+        <div class="footer__social">
+          <a href="https://github.com/dylansolon" target="_blank" class="footer__social-link">
+            <i class="ri-github-fill"></i>
+          </a>
+          <a href="www.linkedin.com/in/dylansolon" target="_blank" class="footer__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+        </div>
+        <span class="footer__copy">
+          &#169; Copyright Dylan SOLON. All rights reserved
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="script.js"></script>
+  </body>
+</html>
