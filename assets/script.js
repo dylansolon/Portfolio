@@ -126,16 +126,14 @@ function opentab(tabname) {
 
 /*=============== DOWNLOAD BUTTON ===============*/
 
-let button = document.querySelector(".buttonDownload");
-
-button.addEventListener("click", () => {
+document.getElementById("downloadButton").addEventListener("click", () => {
+  let button = document.querySelector(".buttonDownload");
   button.classList.add("active");
 
   setTimeout(() => {
     button.classList.remove("active");
-    document
-      .querySelector("i")
-      .classList.replace("bx-cloud-download", "bx-check-circle");
+    let icon = document.querySelector(".buttonDownload i");
+    icon.classList.replace("ri-download-cloud-2-line", "ri-checkbox-circle-line");
     document.querySelector(".button-text").innerHTML = "Completed";
   }, 1000);
 });
@@ -145,8 +143,8 @@ function downloadCV() {
   setTimeout(function() {
 
       var link = document.createElement('a');
-      link.href = 'CV_SOLON_DYLAN.pdf';
-      link.download = 'CV_SOLON_DYLAN.pdf';
+      link.href = 'pdf/CV_SOLON_DYLAN.pdf';
+      link.download = 'pdf/CV_SOLON_DYLAN.pdf';
 
       document.body.appendChild(link);
 
