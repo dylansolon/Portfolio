@@ -143,7 +143,7 @@ function downloadCV() {
   setTimeout(function() {
 
       var link = document.createElement('a');
-      link.href = '../pdf/CV_SOLON_DYLAN.pdf';
+      link.href = 'https://dylansolon.fr/CV_SOLON_DYLAN.pdf';
       link.download = 'CV_SOLON_DYLAN.pdf';
 
       document.body.appendChild(link);
