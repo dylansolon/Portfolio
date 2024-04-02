@@ -98,8 +98,8 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin:'top',
     distance:'60px',
-    duration:2500,
-    delay:400,
+    duration:2000,
+    delay:200,
 })
 
 sr.reveal(`.home__content, .contact__container, .footer__container`)
@@ -143,8 +143,8 @@ function downloadCV() {
   setTimeout(function() {
 
       var link = document.createElement('a');
-      link.href = 'pdf/CV_SOLON_DYLAN.pdf';
-      link.download = 'pdf/CV_SOLON_DYLAN.pdf';
+      link.href = '../pdf/CV_SOLON_DYLAN.pdf';
+      link.download = 'CV_SOLON_DYLAN.pdf';
 
       document.body.appendChild(link);
 
